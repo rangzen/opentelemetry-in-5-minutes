@@ -49,9 +49,9 @@ Software Crafters - Montreal - 2023-03-01
 
 > Observability is the ability to understand the internal state of a system by observing its external behavior.
 
-- Logs (events in time)
-- Metrics (time series)
-- Traces (from Spans, unit of work)
+- <twemoji-skull /> Logs (records of events in time)
+- <twemoji-thermometer /> Metrics (collections of time-series data)
+- <twemoji-dna /> Traces (derived from Spans, which represent units of work)
 
 <img src="/waterfall_trace.png" class="h-70 rounded shadow" />
 
@@ -59,20 +59,22 @@ Software Crafters - Montreal - 2023-03-01
 
 # Open Telemetry (OTel)
 
-> OpenTelemetry is a collection of tools, APIs, and SDKs.
-> You can use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces)
-> for analysis in order to understand your software's performance and behavior.
+> OpenTelemetry is a collection of tools, APIs, and SDKs
+> designed for instrumenting, generating, collecting, and exporting
+> telemetry data such as metrics, logs, and traces.
 
-- Open Standard, so vendor-agnostic (no lock-in) through the SDK (all main languages) or the collector.
-- Does not provide a backend nor a UI.
-- Status:
-  - Stable for tracing
-  - Stable for metrics (SDK mixed)
-  - Draft for logs.
+Key features:
+- <twemoji-penguin /> An open standard, making it vendor-agnostic and preventing lock-in.
+- <twemoji-laptop /> Available through SDKs in all major programming languages or through the collector.
+- <twemoji-no-entry /> Does not provide a backend or a UI.
+- <twemoji-bug /> Currently stable for tracing and metrics, but in draft form for logs.
 
-See https://opentelemetry.io
+More information on [opentelemetry.io](https://opentelemetry.io).
 
 ---
 layout: image
 image: /otel_diagram.png
 ---
+<!--
+From https://opentelemetry.io/docs/
+-->
