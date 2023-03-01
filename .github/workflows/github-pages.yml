@@ -1,19 +1,26 @@
-name: Deploy pages
+name: Build and Deploy to GitHub Pages
 on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v2
         with:
           node-version: '16'
+
       - name: Install dependencies
         run: npm install
+
       - name: Install slidev
         run:  npm i -g @slidev/cli
-      - name: Build
-        run: slidev build --base https://github.com/rangzen/opentelemetry-in-5-minutes
+
+      - name: Build slides
+        run: slidev build --base /opentelemetry-in-5-minutes
+
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
