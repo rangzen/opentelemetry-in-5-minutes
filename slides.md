@@ -29,9 +29,12 @@ defaults:
 
 ---
 
+![Logo](/opentelemetry-horizontal-color.svg)
+
 # Open Telemetry in 5 minutes
 
-For Software Crafters - Montreal - 2023-03-01
+Software Crafters - Montreal - 2023-03-01
+
 
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/rangzen" target="_blank" alt="GitHub"
