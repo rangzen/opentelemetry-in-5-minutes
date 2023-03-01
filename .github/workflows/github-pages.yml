@@ -19,7 +19,7 @@ jobs:
         run:  npm i -g @slidev/cli
 
       - name: Build slides
-        run: slidev build --base https://rangzen.github.io/open-telemetry-in-5-minutes/
+        run: slidev build --base https://rangzen.github.io/opentelemetry-in-5-minutes/
 
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2

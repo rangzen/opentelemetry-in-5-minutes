@@ -1,7 +1,7 @@
 # Open Telemetry in 5 minutes
 
 Repository of the presentation,
-see [GitHub Pages](https://rangzen.github.io/open-telemetry-in-5-minutes/) for the slides.
+see [GitHub Pages](https://rangzen.github.io/opentelemetry-in-5-minutes/) for the slides.
 
 To start the slide show:
 
